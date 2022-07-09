@@ -1,9 +1,9 @@
 ﻿// С клавиатуры вводятся два вещественных числа. Проверять является ли одно из них квадратом второго
 Console.WriteLine("Введите число a");
-double a = Convert.ToInt32(Console.ReadLine());
+double a = Convert.ToDouble(Console.ReadLine());
 
 Console.WriteLine("Введите число b");
-double b = Convert.ToInt32(Console.ReadLine());
+double b = Convert.ToDouble(Console.ReadLine());
 
 if (a * a == b)
 {
