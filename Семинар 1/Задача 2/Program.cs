@@ -5,11 +5,11 @@ double a = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Введите число b");
 double b = Convert.ToInt32(Console.ReadLine());
 
-if (a*a == b)
+if (a * a == b)
 {
     Console.WriteLine(b + " является квадратом " + a); // пробую разные способы конкатенации
 }
-else if (b*b == a)
+else if (b * b == a)
 {
     Console.WriteLine(a + " является квадратом " + b);
 }
