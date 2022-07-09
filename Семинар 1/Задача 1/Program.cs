@@ -1,4 +1,5 @@
-﻿Console.WriteLine("Введите число");
+﻿// С клавиатуры вводится целое число. Вывести квадрат числа 
+Console.WriteLine("Введите число");
 int a = Convert.ToInt32(Console.ReadLine());
 int b = a*a;
 Console.WriteLine($"{a}^2 = {b}"); // строка интерполяции
