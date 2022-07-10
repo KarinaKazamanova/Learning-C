@@ -2,6 +2,7 @@
 int N = Convert.ToInt32(Console.ReadLine());
 int CountDigits (int N)
 {
+    if (N==0) return 1;
     int k = 0;
     while (N!=0)
     {
