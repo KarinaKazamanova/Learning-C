@@ -12,7 +12,7 @@ for (i = 0; i<N; i = i+1)
     System.Console.WriteLine($"{i} ");
 }
 // do
-int a;
+int a =0;
 do
 {
     System.Console.WriteLine("Введите положительное число");
