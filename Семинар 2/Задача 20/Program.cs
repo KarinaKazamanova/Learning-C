@@ -1,25 +1,30 @@
 ﻿// Определить номер четверти плоскости, в которой находится точка с координатами Х и У, причем X ≠ 0 и Y ≠ 0
-bool Check1 (double a), Check2 (double b)
-{
-    return  a > 0;
-    return  b > 0;
-}
+
+
 Console.WriteLine("Введите координаты точки");
-double a = Convert.ToDouble(Console.ReadLine());
-double b = Convert.ToDouble(Console.ReadLine());
-if (Check1(a) && Check2(b))
+double c = Convert.ToDouble(Console.ReadLine());
+double d = Convert.ToDouble(Console.ReadLine());
+bool Check1 (double c)
 {
-    Console.WriteLine("Точка находится в первой четверти");
+    return c > 0;
 }
-else if (Check(a) && Check (b)))
+bool Check2 (double d)
 {
-    Console.WriteLine("Точка находится в четвертой четверти");
+    return d > 0;
+}    
+if (Check1(c) && Check2(d))
+{
+    System.Console.WriteLine("Точка находится в первой четверти");
 }
-else if (Check(b))
+else if (Check1(c) && !Check2(d))
 {
-    Console.WriteLine("Точка находится во второй четверти");
+    System.Console.WriteLine("Точка находится в четвертой четверти");
 }
-else 
+else if (!Check1(c) && Check2(d))
 {
-    Console.WriteLine("Точка находится в третьей четверти");
+    System.Console.WriteLine("Точка находится во второй четверти");
+}
+else if (!Check1(c) && !Check2(d))
+{
+    System.Console.WriteLine("Точка находится в третьей четверти");
 }
