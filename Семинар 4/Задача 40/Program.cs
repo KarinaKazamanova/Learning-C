@@ -2,11 +2,11 @@
 
 int N=12; // изменить
 int [] a = new int [N];
-Random random = new Random (100); // псевдослучайные числа
+Random random = new Random (); // псевдослучайные числа
 
 for (int i=0; i<a.Length; i++)
 {
-    a[i]=random.Next(-9,10);
+    a[i]=random.Next(-9,11);
 }
 for (int i=0; i<a.Length; i++)
 {
