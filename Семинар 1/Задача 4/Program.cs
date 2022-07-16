@@ -44,3 +44,15 @@ while (true)
          continue;
     }
 }
+
+switch(dayOfweek)
+{
+     case 1:
+          System.Console.WriteLine("Пн");
+          break;
+     case 2:
+          System.Console.WriteLine("Вт");
+          break;
+          ...
+
+}
