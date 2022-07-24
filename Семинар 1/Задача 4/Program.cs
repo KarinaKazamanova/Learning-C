@@ -45,6 +45,7 @@ while (true)
     }
 }
 
+/*
 switch(dayOfweek)
 {
      case 1:
@@ -56,3 +57,4 @@ switch(dayOfweek)
           ...
 
 }
+*/
