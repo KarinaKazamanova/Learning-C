@@ -11,7 +11,7 @@ for (int i=0; i<a.Length; i++)
     System.Console.WriteLine($"{a[i], 4}");
 }
 int s=0;
-for (int i=0; i<a; i=i+2)
+for (int i=0; i<a.Length; i=i+2)
 {
     if (i%2!=0)
     {
