@@ -13,7 +13,19 @@ void Power3 (int a)
 
 }
 
+while (true)
+{
+    System.Console.WriteLine("Введите число");
+    int a = Convert.ToInt32(Console.ReadLine());
+    if (a >=0)
+    {
+        Power3(a);
+        break;
+    }
+    else
+    {
+        System.Console.WriteLine("Введите положительное число");
+        continue;
+    }
 
-Console.WriteLine("Введите число");
-int a = Convert.ToInt32(Console.ReadLine());
-Power3(a);
+}
