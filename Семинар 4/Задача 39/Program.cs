@@ -18,4 +18,4 @@ for (int i=0; i<a; i=i+2)
         s=s+a[i];
     }
 }
-System.Console.WriteLine(S);
+System.Console.WriteLine(s);
