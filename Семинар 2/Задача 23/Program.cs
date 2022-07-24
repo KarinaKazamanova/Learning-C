@@ -12,4 +12,4 @@ double Distance (double a, double b, double c, double d)
 }
 
 
-System.Console.WriteLine($"Расстояние между двумя точками равно {Distance(a,b,c,d)}"); 
+System.Console.WriteLine($"Расстояние между двумя точками равно {Distance(a,b,c,d)}");
