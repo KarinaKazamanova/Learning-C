@@ -13,6 +13,5 @@ int Sum(int a)
 
 Console.WriteLine("Введите число");
 int a = Convert.ToInt32(Console.ReadLine());
-int b = 0;
 int TotalSum = Sum (a);
 System.Console.WriteLine($"Сумма от 1 до {a} = {TotalSum} ");
