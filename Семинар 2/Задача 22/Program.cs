@@ -1,18 +1,23 @@
 ﻿// Программа проверяет пятизначное число на палиндромом.
 Console.WriteLine("Введите пятизначное");
 int a = Convert.ToInt32 (Console.ReadLine());
-
-bool Palindrom (double a)
+bool Palindrom (int a, out int b, out int c, out int d, out int e)
 {
-    bool c = (a/10000 == a % 10 && a/1000%10 == a/10%10);
-    return c;
+    b = a/10000;
+    c = a % 10;
+    d = a/1000%10;
+    e = a/10%10;
+    return b == c && d == e;
 }
-
-if (Palindrom (a) == true)
 {
-    System.Console.WriteLine("Введенное число - палиндром");
+     
+}
+Palindrom (a, out int b, out int c, out int d, out int e);
+if (Palindrom (a,out b, out c, out d, out e) == true)
+{
+    Console.WriteLine("Введенное число - палиндром");
 }
 else 
 {
-    System.Console.WriteLine("Введенное число - не палиндром");
+    Console.WriteLine("Введенное число - не палиндром");
 }
