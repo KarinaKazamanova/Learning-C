@@ -14,7 +14,7 @@ for (int i=0; i<numbers.Length; i++)
     }
     else if (i == numbers.Length - 1)
     {
-        System.Console.WriteLine($"{numbers[i]},]");
+        System.Console.WriteLine($"{numbers[i]}]");
     }
     else
     {
