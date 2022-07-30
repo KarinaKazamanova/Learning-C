@@ -1,9 +1,5 @@
 ﻿// В Указанном массиве вещественных чисел найдите разницу между максимальным и минимальным элементом
-string? s=Console.ReadLine();
-string[] ss = s.Split(" ");
-int [] massive = new int [ss.Length];
-for(int i=0;i<massive.Length;i++)
-    massive[i]=int.Parse(ss[i]);
+
 int Max (int [] a)
 {
     int max = a[0];
@@ -29,5 +25,10 @@ int Min (int [] a)
     return min;
 }
 
+string? s=Console.ReadLine();
+string[] ss = s.Split(" ");
+int [] massive = new int [ss.Length];
+for(int i=0;i<massive.Length;i++)
+    massive[i]=int.Parse(ss[i]);
 int b = Max (massive) - Min (massive);
 System.Console.WriteLine(b);
