@@ -11,26 +11,46 @@ int CountNotNull (double [] a)
     }
     return k;
 }
+
+
+void CW (int a)
+{
+    if (a%100 <20 && a%100 > 10 || a%10 > 4 || a%10 ==0)
+    {
+        System.Console.Write($" {a} чисел");
+    }
+    else if (a%10 ==1)
+    {
+        System.Console.Write($" {a} число");   
+    }
+    else
+    {
+        System.Console.Write($" {a} числа"); 
+    }
+}
 Console.WriteLine("Введите число N");
 int N = Convert.ToInt32(Console.ReadLine());
-
-if (N%100 <20 && N%100 > 10 || N%10 > 4 || N%10 ==0)
+while (true)
 {
-    System.Console.WriteLine($"Введите {N} чисел");
+    Console.Write("Введите");
+    CW(N);
+    System.Console.WriteLine("");
+    string? s = Console.ReadLine();
+    string[] ss = s.Split(" ");
+    double [] massive = new double [ss.Length];
+    for (int i =0; i < massive.Length; i++)
+        massive[i] = double.Parse (ss[i]);
+    if (massive.Length == N)
+    {
+        int notnull = CountNotNull (massive);
+        Console.Write("Введено");
+        CW (notnull);
+        System.Console.WriteLine(" больше 0");
+        break;
+    } 
+    else
+    {
+        System.Console.WriteLine ("введенно некорректное количество чисел");
+        continue;
+    }
 }
-else if (N%10 ==1)
-{
-    System.Console.WriteLine($"Введите {N} число");   
-}
-else
-{
-    System.Console.WriteLine($"Введите {N} числа"); 
-}
-
-string? s = Console.ReadLine();
-string[] ss = s.Split(" ");
-double [] massive = new double [N];
-for (int i =0; i < massive.Length; i++)
-    massive[i] = double.Parse (ss[i]);
-int notnull = CountNotNull (massive);
-System.Console.WriteLine(notnull);
