@@ -3,7 +3,7 @@
 100>=N>=2
 */
 int n = int.Parse(System.Console.ReadLine());
-string  s=System.Console.ReadLine();
+string  s=System.Console.ReadLine().Trim();
 string [] ss = s.Split(' ');
 int[] a = System.Array.ConvertAll<string, int>(ss, int.Parse); // первый параметр - из какого типа, второй параметр - в какой тип мы хотим изменить данное
 int k = 0;
