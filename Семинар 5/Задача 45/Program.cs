@@ -6,9 +6,16 @@
 
 void Riddle (double b1, double b2, double k1, double k2)
 {
-    double x = (b2 - b1)/(k1 - k2);
-    double y = k2 * x + b2;  //можно y = k1 * x + b1, что тоже верно
-    System.Console.WriteLine($"Координаты точки пересечения: ({x}; {y})");
+    if (k1==k2)
+    {
+        System.Console.WriteLine($"Прямые параллельны");
+    }
+    else
+    {
+        double x = (b2 - b1)/(k1 - k2);
+        double y = k2 * x + b2;  //можно y = k1 * x + b1, что тоже верно
+        System.Console.WriteLine($"Координаты точки пересечения: ({x}; {y})");
+    }
 }
 
 Console.WriteLine("Введите коэффициент k1 при x1 для y1");
