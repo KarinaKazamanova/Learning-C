@@ -9,8 +9,8 @@ double[] a = Array.ConvertAll<string, double>(ss, double.Parse);
 
 for (int i = 0; i < a.Length; i ++)
     if (a[i]%2 !=0)
-        System.Console.Write($"{a[i] }");
+        System.Console.Write($"{a[i]} ");
 for (int i = 0; i < a.Length; i ++)
     if (a[i]%2 ==0)
-        System.Console.Write($"{a[i] }");
+        System.Console.Write($"{a[i]} ");
    
