@@ -28,7 +28,7 @@ int [,] Init(int N, int M)
     }
     return a;
 }
-int [,] SumMatrix (int [,] a,int [,] b )
+int [,] SumMatrix (int [,] a, int [,] b )
 {
     int[,] c = new int [N,N];
     for (int i=0; i<c.GetLength(0); i++)
