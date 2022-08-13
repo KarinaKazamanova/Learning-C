@@ -11,8 +11,11 @@ for (int i= 0;i<N;i++)
 
 }
 int sum = 0;
+int sum2=0;
 for (int i= 0;i<a.GetLength(0);i++)
 {
     sum = sum + a[i,i];
+    sum2= sum2 + a[i,N-i-1];
 }
 System.Console.WriteLine(sum);
+System.Console.WriteLine(sum2);
