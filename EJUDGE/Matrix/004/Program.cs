@@ -13,9 +13,22 @@ for (int i= 0;i<N;i++)
 
 }
 Print (a);
-
-
-
+int summax = 0;
+int imax = 0;
+for (int i =0; i<a.GetLength(0); i++)
+{
+    int sum=0;
+    for (int j = 0; j< a.GetLength(1); j++)
+    {
+        sum = sum + a[i,j];
+        if (sum>summax)
+        {
+            summax=sum;
+            imax = i;
+        } 
+    }
+}
+System.Console.WriteLine(imax);
 void Print(int[,] a)
 {
     for (int i=0; i<a.GetLength(0); i++)
@@ -25,3 +38,5 @@ void Print(int[,] a)
     System.Console.WriteLine();
     }
 }
+
+// int[][ - vfccbd vfccbdjd]
