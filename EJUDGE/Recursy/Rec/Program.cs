@@ -3,6 +3,5 @@ void Loop (int i, int N)
 {
     System.Console.WriteLine(i);
     if (i<N) Loop (i+1,N);
-    else return;
 }
 Loop(1,10);
