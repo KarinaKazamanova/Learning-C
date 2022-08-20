@@ -18,3 +18,5 @@ if (char.IsDigit(c))
 {
     System.Console.WriteLine("char is digit");
 }
+
+╚  c☺?Ъ
