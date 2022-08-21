@@ -12,11 +12,10 @@ if (m>n)
     m = n;
     n = temp;
 }
-
+Numbers (m, n);
 void Numbers(int m, int n)
 {
     if (m==n-1) System.Console.Write($"{m} ");
     else  Numbers (m, n-1); System.Console.Write($"{n} ");
 }
 
-Numbers (m, n);
