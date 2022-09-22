@@ -4,7 +4,13 @@ int M = int.Parse(System.Console.ReadLine());
 System.Console.WriteLine("Введите количество столбцов в матрице");
 int N = int.Parse(System.Console.ReadLine());
 int [,] SpinMtx = Spiral ( M, N);
+while (SpinMtx [0,0] != 1)
+{
+    SpinMtx = Transp (SpinMtx);
+}
+
 Print (SpinMtx);
+
 
 int [,] Spiral ( int M, int N)
 {
@@ -12,7 +18,8 @@ int [,] Spiral ( int M, int N)
     int k = 1;
     int count = N;
     
-    for (int i = 0; i < (M)/2; i++)
+    
+    for (int i = 0; i < ((M) / 2); i++)
     {
         for ( int j = i; j <= count - i; j ++)
         {
@@ -20,39 +27,53 @@ int [,] Spiral ( int M, int N)
                 
                 if (j == (count-1-i))
                 {
-                    Mtx [i, j] = k;
-                    k = k+1;
-                    Mtx = Transp(Mtx);
-                    if (count == N)
+                    if (k  <= M*N)
                     {
-                        count = M;
-                        j = i;
+                        Mtx [i, j] = k;
+                        k = k+1;
+                        Mtx = Transp(Mtx);
+                        if (count == N)
+                        {
+                            count = M;
+                            j = i;
+                        }
+                        else 
+                        {
+                            count = N;
+                            j = i;
+                        } 
+                        continue;
                     }
                     else 
                     {
-                        count = N;
-                        j = i;
-                    } 
-                    continue;
+                        break;
+                    }
                 }
-                else if (j == (count-2-i) &&  Mtx [i, j +1] != 0)
+                else if (j == (count-2-i) &&  Mtx [i, j +1] != 0 )
                 {
-                    Mtx [i, j] = k;
-                    k = k+1;
-                    Mtx = Transp(Mtx);
-                    if (count == N)
+                    if (k  <= M*N)
                     {
-                        count = M;
-                        j = i;
-                        
-                        
+                        Mtx [i, j] = k;
+                        k = k+1;
+                        Mtx = Transp(Mtx);
+                        if (count == N)
+                        {
+                            count = M;
+                            j = i;
+                            
+                            
+                        }
+                        else 
+                        {
+                            count = N;
+                            j = i;
+                        } 
+                        break;
                     }
                     else 
                     {
-                        count = N;
-                        j = i;
-                    } 
-                    break;
+                        break;
+                    }
                 }
                 else if (j < (count-1-i) &&  Mtx [i, j +1] == 0 )
                 {
