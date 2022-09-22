@@ -19,7 +19,7 @@ int [,] Spiral ( int M, int N)
     int count = N;
     
     
-    for (int i = 0; i < ((M) / 2); i++)
+    for (int i = 0; i <= ((M) / 2); i++)
     {
         for ( int j = i; j <= count - i; j ++)
         {
